@@ -101,6 +101,7 @@
     <Compile Include="Assets\Reward\BloodForge.cs" />
     <Compile Include="Assets\Boss\Grand Slime\DestroyIfBossDead.cs" />
     <Compile Include="Assets\Ending\ButtonPressTransition.cs" />
+    <Compile Include="Assets\Scenes\level\main menu\MenuSprite\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Player\SceneTransitionDelayed.cs" />
     <Compile Include="Assets\Boss\Automaton\AutomatonExplode.cs" />
     <Compile Include="Assets\Scripts\PauseMenuController.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Assets\NPC\VexonDetails\CloseButton.cs" />
     <Compile Include="Assets\NPC\Shop\SpeedUpgrade.cs" />
     <Compile Include="Assets\Scripts\Player\SaveSystem.cs" />
+    <Compile Include="Assets\Scenes\level\main menu\MenuSprite\IntroManager.cs" />
     <Compile Include="Assets\NPC\Event\Event8 Scam\Event8.cs" />
     <Compile Include="Assets\Resources\WeaponBullet\Single\SingleGun.cs" />
     <Compile Include="Assets\Ending\TownReset.cs" />
@@ -169,6 +171,7 @@
     <Compile Include="Assets\Consumeable\ShieldPlayer.cs" />
     <Compile Include="Assets\Trap\Trap.cs" />
     <Compile Include="Assets\Resources\WeaponBullet\FrameDestroy.cs" />
+    <Compile Include="Assets\Scenes\level\main menu\MenuSprite\BgmMuteButton.cs" />
     <Compile Include="Assets\VaultedRoom\Treasure.cs" />
     <Compile Include="Assets\NPC\Event\Event7 Consumeable\Event7.cs" />
     <Compile Include="Assets\NPC\Status Menu\SpeedLevelDisplay.cs" />
@@ -190,6 +193,7 @@
     <Compile Include="Assets\Player UI\PlayerGoldDisplay.cs" />
     <Compile Include="Assets\Scripts\VoskDialogText.cs" />
     <Compile Include="Assets\NPC\Event\Event 10 (binding oath)\WailBind.cs" />
+    <Compile Include="Assets\Scenes\level\main menu\MenuSprite\SFXMuteButton.cs" />
     <Compile Include="Assets\Enemy\Slime.cs" />
     <Compile Include="Assets\Boss\Void Heart\VoidGate.cs" />
     <Compile Include="Assets\Resources\Vexon\Golem\Golem.cs" />

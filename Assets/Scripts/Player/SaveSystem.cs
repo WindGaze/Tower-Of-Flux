@@ -19,9 +19,13 @@ public class SaveSystem : MonoBehaviour
         public bool wailBind;
         public bool soulBind;
         public bool heartBind;
+        public int markerCollisions;
 
         // Now references gate states for the scene's GateEnabler
         public List<bool> gateStates;
+        
+        // Intro manager state
+        public bool introSeen;
     }
 
     [System.Serializable]
@@ -49,6 +53,7 @@ public class SaveSystem : MonoBehaviour
             speedLevel = GameManager.Instance.speedLevel,
             invincibilityLevel = GameManager.Instance.invincibilityLevel,
             playerGems = GameManager.Instance.playerGems,
+            markerCollisions = GameManager.Instance.markerCollisions,
             weapons = new List<WeaponData>(),
             vexons = new List<VexonData>(),
             wailBind = GameManager.Instance.wailBind,
@@ -56,7 +61,8 @@ public class SaveSystem : MonoBehaviour
             heartBind = GameManager.Instance.heartBind,
             gateStates = gateEnabler != null && gateEnabler.isGateEnabled != null
                 ? new List<bool>(gateEnabler.isGateEnabled)
-                : new List<bool>()
+                : new List<bool>(),
+            introSeen = LoadIntroSeenState() // Preserve current intro state
         };
 
         // Save current prefab if spawner is provided
@@ -104,6 +110,7 @@ public class SaveSystem : MonoBehaviour
             GameManager.Instance.speedLevel = saveData.speedLevel;
             GameManager.Instance.invincibilityLevel = saveData.invincibilityLevel;
             GameManager.Instance.playerGems = saveData.playerGems;
+            GameManager.Instance.markerCollisions = saveData.markerCollisions;
             GameManager.Instance.wailBind = saveData.wailBind;
             GameManager.Instance.soulBind = saveData.soulBind;
             GameManager.Instance.heartBind = saveData.heartBind;
@@ -170,5 +177,60 @@ public class SaveSystem : MonoBehaviour
         {
             Debug.LogWarning("Save file not found, starting new game.");
         }
+    }
+
+    // Intro-specific save/load methods
+    public static void SaveIntroSeenState(bool seen)
+    {
+        SaveData saveData;
+        
+        if (File.Exists(savePath))
+        {
+            string json = File.ReadAllText(savePath);
+            saveData = JsonUtility.FromJson<SaveData>(json);
+        }
+        else
+        {
+            // Create new save data if file doesn't exist
+            saveData = new SaveData
+            {
+                playerLevel = GameManager.Instance != null ? GameManager.Instance.playerLevel : 1,
+                speedLevel = GameManager.Instance != null ? GameManager.Instance.speedLevel : 1,
+                invincibilityLevel = GameManager.Instance != null ? GameManager.Instance.invincibilityLevel : 1,
+                playerGems = GameManager.Instance != null ? GameManager.Instance.playerGems : 0,
+                markerCollisions = GameManager.Instance != null ? GameManager.Instance.markerCollisions : 0,
+                weapons = new List<WeaponData>(),
+                vexons = new List<VexonData>(),
+                wailBind = GameManager.Instance != null ? GameManager.Instance.wailBind : false,
+                soulBind = GameManager.Instance != null ? GameManager.Instance.soulBind : false,
+                heartBind = GameManager.Instance != null ? GameManager.Instance.heartBind : false,
+                gateStates = new List<bool>()
+            };
+        }
+        
+        saveData.introSeen = seen;
+        
+        string newJson = JsonUtility.ToJson(saveData, true);
+        File.WriteAllText(savePath, newJson);
+        Debug.Log("Intro seen state saved: " + seen);
+    }
+
+    public static bool LoadIntroSeenState()
+    {
+        if (File.Exists(savePath))
+        {
+            string json = File.ReadAllText(savePath);
+            SaveData saveData = JsonUtility.FromJson<SaveData>(json);
+            return saveData.introSeen;
+        }
+        
+        return false; // Default to not seen if no save file exists
+    }
+
+    // Method to reset intro state (useful for testing)
+    public static void ResetIntroState()
+    {
+        SaveIntroSeenState(false);
+        Debug.Log("Intro state reset - intro will play again");
     }
 }
