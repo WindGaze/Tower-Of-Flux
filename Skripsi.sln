@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F51F4963-71E0-CEFC-9D79-BED6DF4346FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bunny83.simpleJson", "Bunny83.simpleJson.csproj", "{08660EE6-5AB0-26A3-89B1-643976597DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{B25C4869-18AE-340F-64D3-53756245BA72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F51F4963-71E0-CEFC-9D79-BED6DF4346FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51F4963-71E0-CEFC-9D79-BED6DF4346FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51F4963-71E0-CEFC-9D79-BED6DF4346FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51F4963-71E0-CEFC-9D79-BED6DF4346FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08660EE6-5AB0-26A3-89B1-643976597DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08660EE6-5AB0-26A3-89B1-643976597DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08660EE6-5AB0-26A3-89B1-643976597DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08660EE6-5AB0-26A3-89B1-643976597DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25C4869-18AE-340F-64D3-53756245BA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25C4869-18AE-340F-64D3-53756245BA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25C4869-18AE-340F-64D3-53756245BA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25C4869-18AE-340F-64D3-53756245BA72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

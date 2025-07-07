@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{824E39FF-4A51-2B4E-AA40-315F82F4B3AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bunny83.simpleJson", "Bunny83.simpleJson.csproj", "{9455D2A1-27CD-F4DA-D2E3-30C05E6DED4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1B89530F-829D-34B6-5B8C-1B66ECDD62DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{824E39FF-4A51-2B4E-AA40-315F82F4B3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824E39FF-4A51-2B4E-AA40-315F82F4B3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824E39FF-4A51-2B4E-AA40-315F82F4B3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824E39FF-4A51-2B4E-AA40-315F82F4B3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9455D2A1-27CD-F4DA-D2E3-30C05E6DED4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9455D2A1-27CD-F4DA-D2E3-30C05E6DED4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9455D2A1-27CD-F4DA-D2E3-30C05E6DED4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9455D2A1-27CD-F4DA-D2E3-30C05E6DED4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B89530F-829D-34B6-5B8C-1B66ECDD62DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B89530F-829D-34B6-5B8C-1B66ECDD62DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B89530F-829D-34B6-5B8C-1B66ECDD62DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B89530F-829D-34B6-5B8C-1B66ECDD62DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

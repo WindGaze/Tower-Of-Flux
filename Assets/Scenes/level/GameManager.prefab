@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3320812051750931743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5129415095436948295}
+  - component: {fileID: 4375487063585153904}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5129415095436948295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320812051750931743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.17, y: -9.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4375487063585153904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320812051750931743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d11a0e46d94694487a33fc091c9d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerLevel: 1
+  playerGems: 50
+  weapons:
+  - name: Base Gun
+    prefab: {fileID: 998823892226687435, guid: 597596cf909df764eaf4017d45527c0a, type: 3}
+    level: 1
+    isUnlocked: 1
+  - name: Coil
+    prefab: {fileID: 998823892226687435, guid: 058ee854aab63754bb1fffe0d54d26f6, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Rondo
+    prefab: {fileID: 998823892226687435, guid: 5e260497f7a7ec548a74c86a251af625, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Double Trouble
+    prefab: {fileID: 998823892226687435, guid: 4415cae533b62fc4c8cf3de7efd1afa4, type: 3}
+    level: 1
+    isUnlocked: 1
+  - name: Scarlet
+    prefab: {fileID: 998823892226687435, guid: 0149ef36af4ea7b45a6e80d5f91ea0f4, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Assault Rifle
+    prefab: {fileID: 998823892226687435, guid: e1dda48b970c1dc468f5b7e1842f3053, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Aura
+    prefab: {fileID: 998823892226687435, guid: 596295dce1001e54aa39e833d1878a55, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: M14
+    prefab: {fileID: 998823892226687435, guid: fd248018ff297c94bb498f91c72430d0, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Bright Sun
+    prefab: {fileID: 998823892226687435, guid: e5d18d33d9d0f41478f1a561e2d68f7e, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Bucky
+    prefab: {fileID: 998823892226687435, guid: 5d1a1a1e7a774bc478c311093cad5486, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Emerald
+    prefab: {fileID: 998823892226687435, guid: 5bad6a61f6a6f7c499f029da0c00f444, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Bombard
+    prefab: {fileID: 998823892226687435, guid: 79f67a14c98c76e46a8259ead623894e, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Demolisher
+    prefab: {fileID: 998823892226687435, guid: c1b3335ec8c3ae649afddd5440fb0dc1, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Envoy
+    prefab: {fileID: 998823892226687435, guid: 8c23e7f81cc53fe45830ec276ae1561e, type: 3}
+    level: 1
+    isUnlocked: 0
+  - name: Zarr
+    prefab: {fileID: 998823892226687435, guid: c78436531d6c17042824354003ea9eda, type: 3}
+    level: 1
+    isUnlocked: 0
+  vexons:
+  - name: Golem
+    prefab: {fileID: 919132804118916826, guid: 0b21a607074cf9841947271e514b8c63, type: 3}
+    level: 1
+    equipLevel: 1
+    isUnlocked: 1
+  - name: Lucky
+    prefab: {fileID: 8341759957040473312, guid: 9a9e7c48fabac624e9f135a46891f813, type: 3}
+    level: 1
+    equipLevel: 1
+    isUnlocked: 0

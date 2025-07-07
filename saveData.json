@@ -1,0 +1,113 @@
+{
+    "playerLevel": 3,
+    "playerGems": 50,
+    "weapons": [
+        {
+            "name": "Base Gun",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Coil",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Rondo",
+            "level": 1,
+            "isUnlocked": false
+        },
+        {
+            "name": "Double Trouble",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Scarlet",
+            "level": 5,
+            "isUnlocked": true
+        },
+        {
+            "name": "Assault Rifle",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Aura",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "M14",
+            "level": 1,
+            "isUnlocked": false
+        },
+        {
+            "name": "Bright Sun",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Bucky",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Emerald",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Bombard",
+            "level": 1,
+            "isUnlocked": false
+        },
+        {
+            "name": "Demolisher",
+            "level": 5,
+            "isUnlocked": true
+        },
+        {
+            "name": "Envoy",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Zarr",
+            "level": 1,
+            "isUnlocked": true
+        }
+    ],
+    "vexons": [
+        {
+            "name": "Golem",
+            "level": 3,
+            "isUnlocked": true
+        },
+        {
+            "name": "Lucky",
+            "level": 2,
+            "isUnlocked": true
+        },
+        {
+            "name": "Shadow",
+            "level": 3,
+            "isUnlocked": true
+        },
+        {
+            "name": "Winter",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Grendel",
+            "level": 1,
+            "isUnlocked": true
+        },
+        {
+            "name": "Storm",
+            "level": 2,
+            "isUnlocked": true
+        }
+    ]
+}

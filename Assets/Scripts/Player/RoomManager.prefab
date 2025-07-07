@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5129776257553230477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425802997752457088}
+  - component: {fileID: 5414712966091244074}
+  m_Layer: 0
+  m_Name: RoomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &425802997752457088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129776257553230477}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.193034, y: -7.7625394, z: -0.961291}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5414712966091244074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129776257553230477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41234f03d360d6240b68bbb286e04d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomTypes:
+  - roomType: 0
+    entrances: 00000000
+    roomPrefab: {fileID: 3120290395923763679, guid: 0f1dbae255916dc43981ecedbdc693d8, type: 3}
+    maxSpawnCount: 10
+  - roomType: 0
+    entrances: 01000000
+    roomPrefab: {fileID: 412583388161533502, guid: f8b776f7c684f27438e2982001a0100c, type: 3}
+    maxSpawnCount: 10
+  - roomType: 0
+    entrances: 02000000
+    roomPrefab: {fileID: 4605802081215554860, guid: d8a54043b9b319349bafdcc250cda472, type: 3}
+    maxSpawnCount: 10
+  - roomType: 0
+    entrances: 03000000
+    roomPrefab: {fileID: 6459639180508953536, guid: 432709391f7bac042ae7c4d5433e768e, type: 3}
+    maxSpawnCount: 10
+  - roomType: 0
+    entrances: 00000000020000000100000003000000
+    roomPrefab: {fileID: 0}
+    maxSpawnCount: 10
